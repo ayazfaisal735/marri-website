@@ -174,23 +174,32 @@ nav ul li {
       padding: 0 115px;
       margin-top: 130px;
 }
-#what-i-do .i-do h2{
+
+#what-i-do .i-do h2 {
       margin-bottom: 40px;
 }
+
 #what-i-do .card-section {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 40px;
       margin-top: 80px;
+      margin-bottom: 130px;
+     
 }
-
+#what-i-do .card-info{
+      border-radius: 5px;
+      background: #FFF;
+      padding:25px 15px;
+      box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
 #what-i-do .card-section p {
-      color:  #757575;
+      color: #757575;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
-     
+
 }
 
 /* responsive style */
@@ -255,17 +264,21 @@ nav ul li {
             margin-top: 30px;
 
       }
-      #what-i-do .i-do{
+
+      #what-i-do .i-do {
             text-align: left;
             padding-left: 10px;
             margin-top: 10px;
       }
-      #what-i-do .i-do h2{
-            margin-bottom: 5px;;
+
+      #what-i-do .i-do h2 {
+            margin-bottom: 5px;
+            ;
       }
-      #what-i-do .card-section{
+
+      #what-i-do .card-section {
             display: grid;
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
       }
 }
 
@@ -277,7 +290,8 @@ nav ul li {
       nav .navbar {
             padding: 0 10px;
       }
-      #what-i-do .card-section{
-            padding:0 10px ;
+
+      #what-i-do .card-section {
+            padding: 0 10px;
       }
 }
