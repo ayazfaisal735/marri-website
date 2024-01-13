@@ -6,7 +6,8 @@
       padding: 0;
       box-sizing: border-box;
 }
-body{
+
+body {
       font-family: Open Sans;
 }
 
@@ -31,7 +32,7 @@ a {
 .section-header {
       color: #181818;
       text-align: center;
-      font-size: 35px;
+      font-size: 2.18em;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -91,22 +92,26 @@ nav ul li {
       line-height: normal;
       text-transform: capitalize;
 }
-#banner{
+
+#banner {
       margin-top: 45px;
 }
+
 #banner img {
       width: 584px;
       height: 676px;
       flex-shrink: 0;
-      margin-bottom: -10px;
+      margin-bottom: -5px;
 }
 
 #banner .banner-items {
       align-items: center;
 }
-#banner .banner-items button{
+
+#banner .banner-items button {
       margin-right: 20px;
 }
+
 #banner .banner-info {
       width: 50%;
 }
@@ -124,46 +129,155 @@ nav ul li {
 }
 
 #banner .banner-info h1 {
-      color:#181818;
+      color: #181818;
       font-size: 5.3em;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
 }
-#banner .banner-info p{
+
+#banner .banner-info p {
       margin-top: 20px;
       margin-bottom: 30px;
 }
+
+#about-me {
+      margin-top: 130px;
+
+}
+
+#about-me .container {
+      background: #FFF8F3;
+}
+
+#about-me .about-items {
+      text-align: center;
+      padding-top: 130px;
+}
+
+#about-me .about-blog {
+      justify-content: center;
+      gap: 50px;
+      padding-bottom: 130px;
+}
+
+#about-me .common-text {
+      padding: 30px 150px;
+}
+
+#about-me .about-blog .blog-section {
+      text-align: center;
+}
+
+#what-i-do .i-do {
+      text-align: center;
+      padding: 0 115px;
+      margin-top: 130px;
+}
+#what-i-do .i-do h2{
+      margin-bottom: 40px;
+}
+#what-i-do .card-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-top: 80px;
+}
+
+#what-i-do .card-section p {
+      color:  #757575;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+     
+}
+
+/* responsive style */
 @media screen and (max-width:576px) {
-      .navbar{
+
+      .navbar,
+      #about-me .about-blog {
             flex-direction: column;
       }
-      nav ul{
+
+      nav ul {
             flex-direction: row;
       }
-      .container{
+
+      .container {
             width: 100%;
       }
-      #banner .banner-items{
+
+      #banner .banner-items {
             align-items: baseline;
             flex-direction: column-reverse;
       }
-      #banner .banner-info{
+
+      #banner .banner-info {
             padding-left: 20px;
       }
+
       #banner .banner-info {
             width: 100%;
       }
+
       #banner .banner-img {
             width: 100%;
       }
-      #banner .banner-img img{
+
+      #banner .banner-img img {
             width: 100%;
             height: 100%;
             margin-bottom: 10px;
       }
-      nav ul{
+
+      nav ul {
             gap: 10px;
             margin-top: 10px;
+      }
+
+      #about-me .common-text {
+            padding: 0px;
+      }
+
+      #about-me .about-blog {
+            gap: 10px;
+
+      }
+
+      #about-me .about-items {
+            padding: 20px;
+            text-align: left;
+      }
+
+      #about-me {
+            margin-top: 30px;
+
+      }
+      #what-i-do .i-do{
+            text-align: left;
+            padding-left: 10px;
+            margin-top: 10px;
+      }
+      #what-i-do .i-do h2{
+            margin-bottom: 5px;;
+      }
+      #what-i-do .card-section{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+      }
+}
+
+@media screen and (min-width:576px) and (max-width:996px) {
+      #banner .banner-info {
+            padding-left: 20px;
+      }
+
+      nav .navbar {
+            padding: 0 10px;
+      }
+      #what-i-do .card-section{
+            padding:0 10px ;
       }
 }
